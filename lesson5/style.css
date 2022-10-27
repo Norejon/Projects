@@ -1,0 +1,49 @@
+.border{
+    border-radius: 20px;
+    margin: 20px;
+}
+.A{
+    height: 200px;
+    background: greenyellow;
+}
+.B{
+    height: 500px;
+    width: 80%;
+    background: rebeccapurple;
+}
+.C{
+    height: 500px;
+    width: 20%;
+    background: yellow;
+}
+.secoundDiv{
+    display: flex;
+}
+.inBdiv{
+    background: #535359;
+    height: 200px;
+}
+.minidivs{
+    display: flex;
+    justify-content: center;
+}
+.minidivs > div{
+    border-radius: 20px;
+    margin: 20px;
+    background: darkred;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (min-width: 0) and (max-width: 976px) {
+    .secoundDiv{
+        display: inline;
+    }
+    .inPhone{
+        width: 100%;
+        height: 190px;
+    }
+    .B{
+        height: 490px;
+    }
+}
