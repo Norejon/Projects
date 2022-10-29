@@ -44,6 +44,10 @@
         height: 190px;
     }
     .B{
+        padding-top: 10px;
         height: 490px;
+    }
+    .container {
+        padding-right: 40px;
     }
 }
