@@ -1,19 +1,19 @@
 //part 1 || За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині ||
 
-// for (let i =0; i<10; i++){
+// for (let i = 0; i < 10; i++) {
 //     document.write(`<div>Text-довільний</div>`);
 // }
 
 //part 2 || За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині ||
 
-// for (let i =0; i<10; i++){
+// for (let i = 0; i < 10; i++) {
 //     document.write(`<div>Text-довільний ${i}</div>`);
 // }
 
 //part 3 || За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині. ||
 
 // let i = 0;
-// while (i<20){
+// while (i < 20) {
 //     document.write(`<h1>Довільний текст</h1>`);
 //     i++;
 // }
@@ -21,7 +21,7 @@
 //part 4 || За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині. ||
 
 // let i = 0;
-// while (i<20){
+// while (i < 20) {
 //     document.write(`<h1>Довільний текст ${i}</h1>`);
 //     i++;
 // }
@@ -47,7 +47,7 @@
 
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
-// for (let item of listOfItems){
+// for (let item of listOfItems) {
 //     document.write(`<ul>
 // <li>${item}</li>
 // </ul>`);
@@ -88,7 +88,7 @@
 //     },
 // ];
 //
-// for(let product of products){
+// for (let product of products) {
 //     document.write(`<div class="product-card">
 //         <h3 class="product-title">${product.title}<br> Price - ${product.price}</h3>
 //         <img src="${product.image}" alt="${product.title}" class="product-image">
@@ -113,19 +113,19 @@
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
 // ];
-
-// for (let user of users){
+//
+// for (let user of users) {
 //     if (user.status) {
 //         console.log(user);
 //     }
 // }
-// for (let user of users){
+// for (let user of users) {
 //     if (!user.status) {
 //         console.log(user);
 //     }
 // }
-// for (let user of users){
-//     if (user.age>30) {
+// for (let user of users) {
+//     if (user.age > 30) {
 //         console.log(user);
 //     }
 // }
