@@ -61,7 +61,7 @@
 // ];
 //
 // console.log(clients.sort( function (a, b){
-//     if (a.order<b.order){
+//     if (a.order.length<b.order.length){
 //         return -1;
 //     }
 // }));
