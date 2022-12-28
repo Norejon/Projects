@@ -1,0 +1,32 @@
+.mainBlock {
+    display: flex;
+}
+
+.linkA {
+    display: flex;
+    justify-content: center;
+}
+
+.forbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonPost {
+    width: 90%;
+}
+
+.divBlock {
+    display: flex;
+}
+.divBlock div{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.user{
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
