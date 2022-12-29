@@ -19,61 +19,21 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${ids}/comments`)
     .then(response => response.json())
     .then(comments => {
         setTimeout(() => {
-            for (let i = 0; i < comments.length / 4; i++) {
-                let bigDiv = document.createElement('div');
-                bigDiv.setAttribute('class', 'divBlock');
-                for (let o = 0; o < 4; o++) {
-                    if (o == 0) {
-                        let div = document.createElement('div');
-                        let name = document.createElement('h3');
-                        let email = document.createElement('p');
-                        let p = document.createElement('p');
-                        name.append(comments[i + 0].name);
-                        email.append(comments[i + 0].email);
-                        p.append(comments[i + 0].body);
-                        div.append(name,email,p);
-                        bigDiv.append(div);
-                        o++;
-                    }
-                    if (o == 1) {
-                        let div = document.createElement('div');
-                        let name = document.createElement('h3');
-                        let email = document.createElement('p');
-                        let p = document.createElement('p');
-                        name.append(comments[i + 1].name);
-                        email.append(comments[i + 1].email);
-                        p.append(comments[i + 1].body);
-                        div.append(name,email,p);
-                        bigDiv.append(div);
-                        o++;
-                    }
-                    if (o == 2) {
-                        let div = document.createElement('div');
-                        let name = document.createElement('h3');
-                        let email = document.createElement('p');
-                        let p = document.createElement('p');
-                        name.append(comments[i + 2].name);
-                        email.append(comments[i + 2].email);
-                        p.append(comments[i + 2].body);
-                        div.append(name,email,p);
-                        bigDiv.append(div);
-                        o++;
-                    }
-                    if (o == 3) {
-                        let div = document.createElement('div');
-                        let name = document.createElement('h3');
-                        let email = document.createElement('p');
-                        let p = document.createElement('p');
-                        name.append(comments[i + 3].name);
-                        email.append(comments[i + 3].email);
-                        p.append(comments[i + 3].body);
-                        div.append(name,email,p);
-                        bigDiv.append(div);
-                        o++;
-                    }
-                }
-                document.body.append(bigDiv);
-
+            let commentDiv = document.createElement('div');
+            commentDiv.setAttribute('class','commentDiv');
+            for (let comment of comments){
+                let div = document.createElement('div');
+                let name = document.createElement('h3');
+                let email = document.createElement('p');
+                let p = document.createElement('p');
+                div.setAttribute('class','user');
+                name.append(comment.name);
+                email.append(comment.email);
+                p.append(comment.body);
+                div.append(name,email,p);
+                commentDiv.append(div);
             }
+            document.body.append(commentDiv);
+
         }, 200);
     })

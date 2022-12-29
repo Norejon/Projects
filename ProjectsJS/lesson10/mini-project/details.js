@@ -39,64 +39,17 @@ button.onclick = function () {
     fetch(`https://jsonplaceholder.typicode.com/users/${id + 1}/posts`)
         .then(response => response.json())
         .then(posts => {
-            for (let i = 0; i < posts.length / 5; i++) {
-                let divblock = document.createElement('div');
-                divblock.setAttribute('class', 'divBlock')
-                for (let o = 0; o < 5; o++) {
-                    if (o == 0) {
-                        let div = document.createElement('div');
-                        let a = document.createElement('a');
-                        a.innerText = 'деталі...'
-                        a.href = `post-details.html?id=${posts[i].userId}&&ix=${posts[i].id}`
-                        div.append(`${posts[i].title}  `);
-                        div.appendChild(a);
-                        divblock.append(div);
-                        o++;
-                    }
-                    if (o == 1) {
-                        let div = document.createElement('div');
-                        let a = document.createElement('a');
-                        a.innerText = 'деталі...'
-                        a.href = `post-details.html?id=${posts[i].userId}&&ix=${posts[i].id}`
-                        div.append(`${posts[i + 1].title}  `);
-                        div.appendChild(a);
-                        divblock.append(div);
-                        o++;
-                    }
-                    if (o == 2) {
-                        let div = document.createElement('div');
-                        let a = document.createElement('a');
-                        a.innerText = 'деталі...'
-                        a.href = `post-details.html?id=${posts[i].userId}&&ix=${posts[i].id}`
-                        div.append(`${posts[i + 2].title}  `);
-                        div.appendChild(a);
-                        divblock.append(div);
-                        o++;
-                    }
-                    if (o == 3) {
-                        let div = document.createElement('div');
-                        let a = document.createElement('a');
-                        a.innerText = 'деталі...'
-                        a.href = `post-details.html?id=${posts[i].userId}&&ix=${posts[i].id}`
-                        div.append(`${posts[i + 3].title}  `);
-                        div.appendChild(a);
-                        divblock.append(div);
-                        o++;
-                    }
-                    if (o == 4) {
-                        let div = document.createElement('div');
-                        let a = document.createElement('a');
-                        a.innerText = 'деталі...'
-                        a.href = `post-details.html?id=${posts[i].userId}&&ix=${posts[i].id}`
-                        div.append(`${posts[i + 4].title}  `);
-                        div.appendChild(a);
-                        divblock.append(div);
-                        o++;
-                    }
-                }
-
-                document.body.append(divblock);
-
+            let postsDiv = document.createElement('div');
+            postsDiv.setAttribute('class','postDiv');
+            for (let post of posts){
+                let div = document.createElement('div');
+                let a = document.createElement('a');
+                div.setAttribute('class','user');
+                a.innerText = 'деталі...'
+                a.href = `post-details.html?id=${post.userId}&&ix=${post.id}`
+                div.append(`${post.title}  `,a);
+                postsDiv.append(div);
             }
+            document.body.append(postsDiv);
         })
 }
