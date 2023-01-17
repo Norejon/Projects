@@ -1,0 +1,20 @@
+.PersonDiv{
+display: inline-flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 550px;
+    height: auto;
+    margin: 20px;
+    background: #253847;
+}
+.PersonDiv div{
+    margin-left: 20px;
+
+}
+.PersonDiv p{
+    font-weight: bold;
+    color: white;
+}
+img{
+    border-radius: 20px;
+}

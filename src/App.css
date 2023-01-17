@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.MainDiv{
+  width: 1400px;
+  height: auto;
+  display: inline-block;
+  justify-content: left;
+  background: #282c34;
+}
