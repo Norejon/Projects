@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="799139d8-c1d5-4a24-82f3-fd1c39fe3461" name="Changes" comment="hw3">
+    <list default="true" id="799139d8-c1d5-4a24-82f3-fd1c39fe3461" name="Changes" comment="hw3.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/userComponent/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userComponent/UserForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
       <updated>1674829567090</updated>
       <workItem from="1674829568815" duration="2151000" />
       <workItem from="1674847646332" duration="3744000" />
-      <workItem from="1675077224853" duration="541000" />
+      <workItem from="1675077224853" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="hw3">
       <created>1674852651478</created>
@@ -54,7 +55,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674852651478</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hw3.1">
+      <created>1675077811575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675077811575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +81,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw3" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw3" />
+    <MESSAGE value="hw3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw3.1" />
   </component>
 </project>

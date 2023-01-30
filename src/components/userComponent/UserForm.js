@@ -8,18 +8,19 @@ const UserForm = () => {
     const submit= async (user)=> {
        const {users}= await usersService.post(user);
        console.log(user);
+       reset();
     };
 
     return(
         <div>
-          <form onSubmit={handleSubmit(submit)}>
+          <form >
               Name: <input type={'text'} placeholder={'name'} {...register('name')}/>
               <br/>
               Username: <input type={'text'} placeholder={'username'} {...register('username')}/>
               <br/>
               Email: <input type={"text"} placeholder={'email'} {...register('email')}/>
               <br/>
-              <input type='submit' value={'Добавити'} />
+              <button onClick={handleSubmit(submit)}>Добавити</button>
           </form>
         </div>
     )
