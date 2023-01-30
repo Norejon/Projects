@@ -7,6 +7,7 @@ const UserForm = () => {
 
     const submit= async (user)=> {
        const {users}= await usersService.post(user);
+       console.log(user);
     };
 
     return(
