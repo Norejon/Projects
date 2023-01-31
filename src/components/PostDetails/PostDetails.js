@@ -6,8 +6,8 @@ const PostDetails = () => {
     const {postId} = useParams();
     const [post, setPost] = useState(null);
 
-    useEffect(() => {
-        postService.getByid(postId)
+    useEffect(() => {postId&&
+        postService.getById(postId)
             .then(value => value.data)
             .then(post => setPost({...post}));
     }, [postId]);
