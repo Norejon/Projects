@@ -1,0 +1,19 @@
+.Comments {
+    display: flex;
+    height: auto;
+}
+
+.Comment {
+    background: gainsboro;
+    width: 800px;
+    height: auto;
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+}
+
+.CommentDetails {
+
+}
