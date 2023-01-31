@@ -4,7 +4,7 @@ const Comment = ({comment}) => {
     const {postId, id, name, email, body} = comment;
     return(
         <div>
-        <Link to={id.toString()} className={css.Link}>
+        <Link to={id.toString()} state={{...comment}} className={css.Link}>
         <div>
             <div className={css.Comment}>
             <div>postId: {postId}</div>

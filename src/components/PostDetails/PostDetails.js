@@ -1,16 +1,22 @@
-import {useParams} from "react-router-dom";
+import {useLocation, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import postService from "../../services/postService";
 
 const PostDetails = () => {
     const {postId} = useParams();
     const [post, setPost] = useState(null);
+    const {state} = useLocation();
 
-    useEffect(() => {postId&&
-        postService.getById(postId)
-            .then(value => value.data)
-            .then(post => setPost({...post}));
-    }, [postId]);
+    useEffect(() => {
+        if (state) {
+            setPost({...state})
+        } else {
+            postId &&
+            postService.getById(postId)
+                .then(value => value.data)
+                .then(post => setPost({...post}));
+        }
+    }, [postId])
     return (
         <div>
             {post &&
