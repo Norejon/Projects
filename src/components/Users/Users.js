@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
-import {userService} from "../../services";
 import {useDispatch, useSelector} from "react-redux";
 import {userActions} from "../../redux";
+
+import {userService} from "../../services";
 import User from "../User/User";
 
 const Users = () => {
